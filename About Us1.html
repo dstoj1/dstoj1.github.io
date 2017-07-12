@@ -1,0 +1,148 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1”><title>This is the title of your website</title>
+<meta name=“description” content=“Description of the page content” /><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity=“sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">     
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<style>
+body {font-family: "Lato", sans-serif;}
+
+
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: pink;
+    float:left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 12px;
+    transition: 0.3s;
+    font-size: 13px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+</head>
+<body>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+     
+</body>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 25px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: #aaa;color:white;}
+footer {background: #aaa;color:white;}
+.nav {background:#ffebcd;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+  <h1>ABOUT US</h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <li><a href="index.html">HOME</a></li>
+  <br>
+  <li><a href="about us1.html">ABOUT US</a></li>
+  <br>
+  <li><a href="product.html">PRODUCT</a></li>
+  <br>
+  <li><a href="place order.html">PLACE ORDER</a></li>
+  <br>
+  <li><a href="contact us.html">CONTACT US</a></li>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <li><a href="sign in.html">SIGN IN</a></li>
+</ul>
+</nav>
+
+<article class="article">
+   <p> As parents, we could never keep our kids items in their backpacks dry during sports events or going to school. We tried putting them in garbage bags during their soccer games but as soon as they opened the bag to get something out, their gear became wet. Then we tried putting a shopping bag but then the bottom of the bag became wet. After searching online and in stores, we finally realized there was nothing out there to solve the two problems we had. That is where we came up with RAIN=OUT. A waterproof, tear resistant cover that protects from ground soaking as well allows you to remove items from your bag without the rest of your bag becoming wet..</p>
+</article>
+
+<footer>Copyright &copy; W3Schools.com</footer>
+</div>
+
+</body>
+</html> 
+
+
+     
