@@ -1,9 +1,17 @@
-  <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1”><title>This is the title of your website</title>
-<meta name=“description” content=“Description of the page content” /><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity=“sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">     
+<meta name=“description” content=“Description of the page content” /><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity=“sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">    
+<title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <link rel="stylesheet" type="text/css" href="styles.css">
 
 <style>
@@ -111,18 +119,18 @@ footer {background: #aaa;color:white;}
 
 <div class="flex-container">
 <header>
-  <h1>PRODUCT</h1>
+  <h1>HELLO</h1>
 </header>
 
 <nav class="nav">
 <ul>
   <li><a href="index.html">HOME</a></li>
   <br>
-  <li><a href="Website/About_Us.html">ABOUT US</a></li>
+  <li><a href="Website/About Us.html">ABOUT US</a></li>
   <br>
   <li><a href="Website/Product.html">PRODUCT</a></li>
   <br>
-  <li><a href="Website/Place_Order.html">PLACE ORDER</a></li>
+  <li><a href="Website/Place Order.html">PLACE ORDER</a></li>
   <br>
   <li><a href="Website/Contact.html">CONTACT US</a></li>
   <br>
@@ -130,14 +138,27 @@ footer {background: #aaa;color:white;}
   <br>
   <br>
   <br>
-  <li><a href="Website/Sign_In.html">SIGN IN</a></li>
+  <li><a href="Website/.Sign In.html">SIGN IN</a></li>
 </ul>
 </nav>
 
 <article class="article">
-  <p>RAIN=OUT is a Patented Pending protective covering designed with durability in mind. It is made of waterproof, tear resistant material to stand up against the toughest conditions.</p> 
-  <img src="http://www.dhresource.com/0x0s/f2-albu-g1-M00-E3-E0-rBVaGFaJ4jeAYXeyAAFxjpGxSTM861.jpg/custom-design-print-logo-nylon-backpack-rain.jpg" style="width:304px;height:228px;">
-
+   <div class="container">
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
 </article>
 
 <footer>Copyright &copy; W3Schools.com</footer>
